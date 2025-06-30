@@ -30,7 +30,7 @@ kastux-cuadernos/
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+│   └── app.js
 
 
 ## 📌 Alcances de esta implementación
