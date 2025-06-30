@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registrar Insumo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <h1 class="titulo">Registrar Insumo</h1>
+
+  <form id="formInsumo">
+    <input type="text" id="nombre" placeholder="Nombre del insumo" required />
+    <input type="number" id="cantidad" placeholder="Cantidad" required />
+    <select id="unidad" required>
+      <option value="">Unidad de medida</option>
+      <option>u</option>
+      <option>cm</option>
+    </select>
+    <button type="submit">Aceptar</button>
+  </form>
+
+  <a href="index.html" class="btn-volver">← Volver al inicio</a>
+
+  <div id="mensaje" style="display:none;">✔️ Registro creado correctamente</div>
+
+  <script>
+    document.getElementById("formInsumo").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const insumo = {
+        nombre: document.getElementById("nombre").value,
+        cantidad: document.getElementById("cantidad").value,
+        unidad: document.getElementById("unidad").value
+      };
+      localStorage.setItem("insumo", JSON.stringify(insumo));
+      document.getElementById("mensaje").style.display = "block";
+    });
+  </script>
+</body>
+</html>
