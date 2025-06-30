@@ -21,9 +21,16 @@ Simular el proceso de registro de insumos en el módulo de stock, replicando el 
 - Comportamiento visual coherente con el prototipo desarrollado en Figma
 
 ## 📁 Estructura del proyecto
-├── index.html # Página principal con el formulario y tabla
-├── styles.css # Estilos aplicados a la interfaz
-└── script.js # Lógica de validación e interacción
+kastux-cuadernos/
+├── index.html
+├── registrar-insumo.html
+├── assets/
+│   └── img/
+│       └── logo-kastux.png
+├── css/
+│   └── style.css
+├── js/
+│   └── app.js
 
 
 ## 📌 Alcances de esta implementación
